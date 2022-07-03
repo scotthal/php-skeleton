@@ -6,6 +6,8 @@ ARG USER_GID=$USER_UID
 
 ENV DEBIAN_FRONTEND=noninteractive
 
+COPY etc-nginx-sites-enabled-default /etc/nginx/sites-enabled/default
+
 RUN apt-get update; \
   apt-get -y install locales less dialog apt-utils man-db bc zsh zip unzip sudo vim git lsb-release curl httpie jq; \
   apt-get -y install nginx; \

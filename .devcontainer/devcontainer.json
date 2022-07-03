@@ -11,6 +11,8 @@
         "ms-azuretools.vscode-docker",
         "visualstudioexptteam.vscodeintellicode",
         "xdebug.php-pack"
+      ]
     }
-  }
+  },
+  "forwardPorts": [80]
 }
